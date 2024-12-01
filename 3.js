@@ -6,27 +6,12 @@ const obj = {
     object: 0,
     undefined: 0,
 }
-const sort = (array) => {
+const sort = (array)=>{
     for (const element of array){
         const type = typeof element;
-        switch(type){
-            case "string":
-                obj.string++
-                break;
-            case "number":
-                obj.number++
-                break;
-            case "boolean":
-                obj.boolean++
-                break;
-            case "object":
-                obj.object++
-                break;
-            case 'undefined':
-                obj.undefined++;
-                break;
-        }
+        obj[type]++
     }
-}
+        return array
+    }
 sort(array)
-console.log(obj)
+console.dir(obj)
