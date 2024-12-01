@@ -29,4 +29,4 @@ const sort = (array) => {
     }
 }
 sort(array)
-console.log(obj)
+console.dir(obj)
