@@ -6,12 +6,12 @@ const obj = {
     object: 0,
     undefined: 0,
 }
-const sort = (array)=>{
+const countQuantityByType = (array)=>{
     for (const element of array){
         const type = typeof element;
         obj[type]++
     }
         return array
     }
-sort(array)
+countQuantityByType(array)
 console.dir(obj)
